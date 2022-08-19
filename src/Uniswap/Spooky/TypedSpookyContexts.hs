@@ -8,7 +8,7 @@
 {-# OPTIONS_GHC -fno-specialise #-}
 
 -- We suffix the record fields with ' to denote these are Spooky fields, and we provide accessor functions of the same name (wo the suffix) that unSpookify these fields.
-module Minswap.Spooky.TypedSpookyContexts
+module Uniswap.Spooky.TypedSpookyContexts
   ( ScriptContext (..),
     scriptContextTxInfo,
     scriptContextPurpose,
@@ -39,7 +39,7 @@ module Minswap.Spooky.TypedSpookyContexts
 where
 
 import GHC.Generics (Generic)
-import Minswap.Spooky.Typed (Spooky, unSpooky)
+import Uniswap.Spooky.Typed (Spooky, unSpooky)
 import Plutus.V1.Ledger.Api
   ( Address,
     CurrencySymbol,

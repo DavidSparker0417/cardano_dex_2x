@@ -1,7 +1,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE NoImplicitPrelude #-}
 
-module Minswap.Utils.OnChainUtils
+module Uniswap.Utils.OnChainUtils
   ( assertPoolValue,
     mustFindScriptDatum,
     mustFindScriptDatum',
@@ -13,8 +13,8 @@ module Minswap.Utils.OnChainUtils
   )
 where
 
-import qualified Minswap.Spooky.TypedSpookyContexts as SC
-import Minswap.Types.Coin (adaCoin, assetClassValueOf)
+import qualified Uniswap.Spooky.TypedSpookyContexts as SC
+import Uniswap.Types.Coin (adaCoin, assetClassValueOf)
 import Plutus.V1.Ledger.Api (Datum (Datum))
 import Plutus.V1.Ledger.Contexts (TxInfo, TxOut, findDatum)
 import Plutus.V1.Ledger.Tx (txOutDatum)

@@ -8,7 +8,7 @@
 {-# OPTIONS_GHC -fno-specialise #-}
 {-# OPTIONS_GHC -fno-worker-wrapper #-}
 
-module Minswap.ConstantProductFactory.OnChain
+module Uniswap.ConstantProductFactory.OnChain
   ( mkFactoryCoin,
     mkFactoryScript,
     mkFactoryPolicy,
@@ -17,17 +17,17 @@ where
 
 import Data.Maybe (fromJust)
 import Ledger (Script, scriptCurrencySymbol)
-import Minswap.ConstantProductFactory.Types (FactoryParams (..))
-import Minswap.ConstantProductLiquidity.OnChain (mkLiquiditySymbol)
-import Minswap.ConstantProductPool.Types
+import Uniswap.ConstantProductFactory.Types (FactoryParams (..))
+import Uniswap.ConstantProductLiquidity.OnChain (mkLiquiditySymbol)
+import Uniswap.ConstantProductPool.Types
   ( PoolDatum (pdCoinA, pdCoinB, pdProfitSharing, pdRootKLast, pdTotalLiquidity),
   )
-import Minswap.ConstantProductPool.Utils (calculateInitialLiquidity, minimumLiquidity)
-import Minswap.ConstantProductPoolNFT.OnChain (mkNFTSymbol)
-import Minswap.ConstantProductPoolNFT.Utils (poolNFTOf)
-import qualified Minswap.Spooky.TypedSpookyContexts as SC
-import Minswap.Types.Coin (assetClass, assetClassValueOf, tokenNameOf)
-import Minswap.Utils.OnChainUtils (assertPoolValue, mustFindScriptDatum')
+import Uniswap.ConstantProductPool.Utils (calculateInitialLiquidity, minimumLiquidity)
+import Uniswap.ConstantProductPoolNFT.OnChain (mkNFTSymbol)
+import Uniswap.ConstantProductPoolNFT.Utils (poolNFTOf)
+import qualified Uniswap.Spooky.TypedSpookyContexts as SC
+import Uniswap.Types.Coin (assetClass, assetClassValueOf, tokenNameOf)
+import Uniswap.Utils.OnChainUtils (assertPoolValue, mustFindScriptDatum')
 import qualified Plutonomy
 import Plutus.V1.Ledger.Api (CurrencySymbol, MintingPolicy, unMintingPolicyScript)
 import Plutus.V1.Ledger.Value (AssetClass, TokenName, Value, tokenName)

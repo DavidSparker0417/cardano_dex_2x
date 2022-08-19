@@ -1,14 +1,14 @@
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE TypeApplications #-}
 
-module Minswap.BatchOrder.OnChain (mkBatchOrderScript) where
+module Uniswap.BatchOrder.OnChain (mkBatchOrderScript) where
 
 import Ledger (Script, Validator, ValidatorHash (..), unValidatorScript, validatorHash)
-import Minswap.BatchOrder.Types (POrderDatum, POrderRedeemer (..))
-import Minswap.ConstantProductPool.OnChain (mkPoolScript)
-import qualified Minswap.Plutarch.Ledger as PLedger
-import Minswap.Plutarch.Utils (psingleMatch)
-import Minswap.Plutarch.Utils.Cont (pmatchC, ptraceC)
+import Uniswap.BatchOrder.Types (POrderDatum, POrderRedeemer (..))
+import Uniswap.ConstantProductPool.OnChain (mkPoolScript)
+import qualified Uniswap.Plutarch.Ledger as PLedger
+import Uniswap.Plutarch.Utils (psingleMatch)
+import Uniswap.Plutarch.Utils.Cont (pmatchC, ptraceC)
 import Plutarch (compile)
 import Plutarch.Api.V1 (PAddress, PPubKeyHash (PPubKeyHash), PScriptContext)
 import Plutarch.Prelude

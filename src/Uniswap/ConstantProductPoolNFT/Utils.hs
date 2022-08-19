@@ -1,13 +1,13 @@
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE NoImplicitPrelude #-}
 
-module Minswap.ConstantProductPoolNFT.Utils
+module Uniswap.ConstantProductPoolNFT.Utils
   ( poolNFTOf,
   )
 where
 
 import Ledger (AssetClass, Value)
-import Minswap.Types.Coin
+import Uniswap.Types.Coin
 import Plutus.V1.Ledger.Api (Value (Value))
 import Plutus.V1.Ledger.Value (CurrencySymbol)
 import qualified PlutusTx.AssocMap as Map

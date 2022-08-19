@@ -7,11 +7,11 @@ import Cardano.Api.Shelley (PlutusScript (PlutusScriptSerialised))
 import Codec.Serialise (serialise)
 import qualified Data.ByteString.Lazy as LBS
 import qualified Data.ByteString.Short as SBS
-import Minswap.BatchOrder.OnChain
-import Minswap.ConstantProductFactory.OnChain
-import Minswap.ConstantProductLiquidity.OnChain
-import Minswap.ConstantProductPool.OnChain
-import Minswap.ConstantProductPoolNFT.OnChain
+import Uniswap.BatchOrder.OnChain
+import Uniswap.ConstantProductFactory.OnChain
+import Uniswap.ConstantProductLiquidity.OnChain
+import Uniswap.ConstantProductPool.OnChain
+import Uniswap.ConstantProductPoolNFT.OnChain
 import Plutus.V1.Ledger.Scripts (Script, scriptSize)
 import qualified Plutus.V1.Ledger.Api as Plutus
 import System.Environment (getArgs)

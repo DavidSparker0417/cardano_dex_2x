@@ -9,7 +9,7 @@
 {-# OPTIONS_GHC -fno-specialise #-}
 {-# OPTIONS_GHC -fno-worker-wrapper #-}
 
-module Minswap.ConstantProductPool.OnChain
+module Uniswap.ConstantProductPool.OnChain
   ( mkPoolScript,
     mkLicenseSymbol,
     mkOwnerTokenName,
@@ -37,15 +37,15 @@ import Ledger
     findOwnInput,
     toPubKeyHash,
   )
-import Minswap.BatchOrder.Types
+import Uniswap.BatchOrder.Types
   ( OrderDatum (..),
     OrderStep (Deposit, OneSideDeposit, SwapExactIn, SwapExactOut, Withdraw),
   )
-import Minswap.ConstantProductFactory.OnChain (mkFactoryCoin)
-import Minswap.ConstantProductLiquidity.OnChain
+import Uniswap.ConstantProductFactory.OnChain (mkFactoryCoin)
+import Uniswap.ConstantProductLiquidity.OnChain
   ( mkLiquiditySymbol,
   )
-import Minswap.ConstantProductPool.Types
+import Uniswap.ConstantProductPool.Types
   ( PoolDatum
       ( PoolDatum,
         pdCoinA,
@@ -59,7 +59,7 @@ import Minswap.ConstantProductPool.Types
     psFeeTo,
     psFeeToDatumHash,
   )
-import Minswap.ConstantProductPool.Utils
+import Uniswap.ConstantProductPool.Utils
   ( calSqrt,
     calculateDepositAmount,
     calculateProfitSharing,
@@ -67,17 +67,17 @@ import Minswap.ConstantProductPool.Utils
     getAmountIn,
     getAmountOut,
   )
-import Minswap.ConstantProductPoolNFT.OnChain (mkNFTSymbol)
-import Minswap.ConstantProductPoolNFT.Utils
+import Uniswap.ConstantProductPoolNFT.OnChain (mkNFTSymbol)
+import Uniswap.ConstantProductPoolNFT.Utils
   ( poolNFTOf,
   )
-import Minswap.Types.Coin
+import Uniswap.Types.Coin
   ( adaCoin,
     assetClass,
     assetClassValueOf,
     tokenNameOf,
   )
-import Minswap.Utils.OnChainUtils
+import Uniswap.Utils.OnChainUtils
   ( assertPoolValue,
     bsToInteger,
     mustFindScriptDatum,

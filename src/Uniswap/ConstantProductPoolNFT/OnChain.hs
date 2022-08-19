@@ -7,7 +7,7 @@
 {-# OPTIONS_GHC -fno-specialise #-}
 {-# OPTIONS_GHC -fno-worker-wrapper #-}
 
-module Minswap.ConstantProductPoolNFT.OnChain
+module Uniswap.ConstantProductPoolNFT.OnChain
   ( mkNFTSymbol,
     mkNFTTokenName,
     mkNFTScript,
@@ -25,9 +25,9 @@ import Ledger
     scriptCurrencySymbol,
     unMintingPolicyScript,
   )
-import qualified Minswap.Spooky.TypedSpookyContexts as SC
-import Minswap.Types.Coin (assetClass, isUnity)
-import Minswap.Utils.OnChainUtils (integerToBS)
+import qualified Uniswap.Spooky.TypedSpookyContexts as SC
+import Uniswap.Types.Coin (assetClass, isUnity)
+import Uniswap.Utils.OnChainUtils (integerToBS)
 import qualified Plutonomy
 import Plutus.V1.Ledger.Value (TokenName (TokenName))
 import qualified PlutusTx
