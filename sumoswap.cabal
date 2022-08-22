@@ -1,10 +1,10 @@
 Cabal-Version:      3.0
-Name:               minswap-core
+Name:               sumoswap-core
 Version:            0.1.0.0
 Author:              Uniswap Labs
-Maintainer:          contact@minswap.org
+Maintainer:          contact@sumoswap.org
 Build-Type:          Simple
-Copyright:           © 2021 Uniswap Labs
+Copyright:           © 2022 SumoSwap Labs
 License:             GPL-3.0-only
 License-files:       LICENSE
 
@@ -90,10 +90,10 @@ library
     , plutonomy
     , generics-sop
 
-executable minswap-cli
+executable sumoswap-cli
   import: c
-  hs-source-dirs: src/Uniswap
-  main-is:        MinswapCLI.hs
+  hs-source-dirs: src/SumoSwap
+  main-is:        SumoSwapCLI.hs
   ghc-options:    -threaded -rtsopts "-with-rtsopts=-T"
   build-depends:
     , aeson
@@ -105,7 +105,7 @@ executable minswap-cli
     , directory
     , directory >= 1.3.6.0
     , ghc-prim
-    , minswap-core
+    , sumoswap-core
     , plutus-core
     , plutus-ledger
     , plutus-ledger-api
@@ -116,7 +116,7 @@ executable minswap-cli
     , template-haskell >= 2.16.0.0
     , text
 
-test-suite minswap-tests
+test-suite sumoswap-tests
   import: c
   type: exitcode-stdio-1.0
   main-is: Spec.hs
@@ -129,7 +129,7 @@ test-suite minswap-tests
     , data-default
     , directory >= 1.3.6.0
     , freer-extras
-    , minswap-core
+    , sumoswap-core
     , plutus-ledger
     , plutus-tx
     , tasty
@@ -147,7 +147,7 @@ test-suite tweag-audit
     Audit.Attacks
     Audit.Attacks.DatumHijacking
     Audit.OffChain
-    Audit.MinSwapScripts
+    Audit.SumoSwapScripts
     Audit.ConstantProductPool.BasicOrderProcessing
     Audit.ConstantProductPool.ProfitSharing
     Audit.ConstantProductPool.WithdrawLiquidity
@@ -164,7 +164,7 @@ test-suite tweag-audit
     , data-default
     , directory >= 1.3.6.0
     , freer-extras
-    , minswap-core
+    , sumoswap-core
     , plutus-ledger
     , plutus-tx
     , tasty

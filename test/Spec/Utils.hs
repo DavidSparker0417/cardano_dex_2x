@@ -3,8 +3,8 @@
 
 module Spec.Utils (tests) where
 
-import Uniswap.ConstantProductPool.Utils (calSqrt, calculateInitialLiquidity, getAmountIn, getAmountOut)
-import Uniswap.Utils.OnChainUtils (base256ToInteger, bsToInteger, integerToBS, integerToBase256)
+import SumoSwap.ConstantProductPool.Utils (calSqrt, calculateInitialLiquidity, getAmountIn, getAmountOut)
+import SumoSwap.Utils.OnChainUtils (base256ToInteger, bsToInteger, integerToBS, integerToBase256)
 import PlutusTx.Builtins.Class (stringToBuiltinByteString)
 import Test.Tasty
 import Test.Tasty.QuickCheck (Positive (Positive))

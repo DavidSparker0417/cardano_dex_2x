@@ -12,5 +12,5 @@ main = defaultMain tests
 tests :: TestTree
 tests =
   testGroup
-    "Minswap DEX"
+    "SumoSwap DEX"
     [Spec.Utils.tests]

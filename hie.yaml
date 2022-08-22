@@ -1,8 +1,8 @@
 cradle:
   cabal:
     - path: "./src"
-      component: "lib:minswap-core"
+      component: "lib:sumoswap-core"
     - path: "./test"
-      component: "test:minswap-tests"
+      component: "test:sumoswap-tests"
     - path: "./audit"
       component: "test:tweag-audit"
