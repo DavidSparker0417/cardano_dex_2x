@@ -1,10 +1,10 @@
 Cabal-Version:      3.0
 Name:               minswap-core
 Version:            0.1.0.0
-Author:              Minswap Labs
+Author:              Uniswap Labs
 Maintainer:          contact@minswap.org
 Build-Type:          Simple
-Copyright:           © 2021 Minswap Labs
+Copyright:           © 2021 Uniswap Labs
 License:             GPL-3.0-only
 License-files:       LICENSE
 
@@ -42,25 +42,25 @@ library
   import: c
   hs-source-dirs: src
   exposed-modules:
-    Minswap.Types.Coin,
-    Minswap.ConstantProductPool.OnChain,
-    Minswap.ConstantProductPool.Types,
-    Minswap.ConstantProductPool.Utils,
-    Minswap.ConstantProductFactory.OnChain,
-    Minswap.ConstantProductFactory.Types,
-    Minswap.ConstantProductLiquidity.OnChain,
-    Minswap.ConstantProductPoolNFT.OnChain,
-    Minswap.ConstantProductPoolNFT.Utils,
-    Minswap.BatchOrder.OnChain,
-    Minswap.BatchOrder.Types,
-    Minswap.Utils.OnChainUtils,
-    Minswap.Spooky.Typed,
-    Minswap.Spooky.Untyped,
-    Minswap.Spooky.TypedSpookyContexts,
-    Minswap.Spooky.UntypedSpookyContexts,
-    Minswap.Plutarch.Utils,
-    Minswap.Plutarch.Utils.Cont,
-    Minswap.Plutarch.Ledger
+    Uniswap.Types.Coin,
+    Uniswap.ConstantProductPool.OnChain,
+    Uniswap.ConstantProductPool.Types,
+    Uniswap.ConstantProductPool.Utils,
+    Uniswap.ConstantProductFactory.OnChain,
+    Uniswap.ConstantProductFactory.Types,
+    Uniswap.ConstantProductLiquidity.OnChain,
+    Uniswap.ConstantProductPoolNFT.OnChain,
+    Uniswap.ConstantProductPoolNFT.Utils,
+    Uniswap.BatchOrder.OnChain,
+    Uniswap.BatchOrder.Types,
+    Uniswap.Utils.OnChainUtils,
+    Uniswap.Spooky.Typed,
+    Uniswap.Spooky.Untyped,
+    Uniswap.Spooky.TypedSpookyContexts,
+    Uniswap.Spooky.UntypedSpookyContexts,
+    Uniswap.Plutarch.Utils,
+    Uniswap.Plutarch.Utils.Cont,
+    Uniswap.Plutarch.Ledger
   build-depends:
     , aeson
     , base ^>= 4.14.1.0
@@ -92,7 +92,7 @@ library
 
 executable minswap-cli
   import: c
-  hs-source-dirs: src/Minswap
+  hs-source-dirs: src/Uniswap
   main-is:        MinswapCLI.hs
   ghc-options:    -threaded -rtsopts "-with-rtsopts=-T"
   build-depends:
