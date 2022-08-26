@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn-gradient {
+    @apply whitespace-nowrap bg-gradient-to-r from-orange-dark to-orange-light text-blue-dark cursor-pointer;
+}
+
+.btn-gradient-outline {
+    @apply border-2 border-orange-dark text-white cursor-pointer whitespace-nowrap;
+}
+.page-padding {
+    @apply px-4 md:px-8 lg:px-10 xl:px-20
+}
